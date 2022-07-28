@@ -1,0 +1,13 @@
+{
+  "name": "lilcafe",
+  "description": "A cafe simulation to demonstrate schema validation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.11.0",
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1"
+  },
+  "author": "Pranay Pradhananga"
+}
