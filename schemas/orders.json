@@ -1,0 +1,46 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "description": "An order for a cafe",
+    "type": "object",
+    "properties": {
+        "item": {
+            "type": "string"
+        },
+        "milk": {
+            "type": "string"
+        },
+        "sugar": {
+            "type": "number"
+        },
+        "category": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "item",
+        "milk",
+        "sugar"
+    ],
+    "if": {
+        "properties": {
+            "item": {
+                "const": "coffee"
+            }
+        }
+    },
+    "then": {
+        "required": [
+            "item",
+            "milk",
+            "sugar",
+            "category"
+        ]
+    },
+    "else": {
+        "required": [
+            "item",
+            "milk",
+            "sugar"
+        ]
+    }
+}
